@@ -43,6 +43,9 @@ var (
 	deviceGlobalCflags = []string{
 		"-fdiagnostics-color",
 
+		"-fdata-sections",
+		"-fno-short-enums",
+
 		// TARGET_ERROR_FLAGS
 		"-Werror=return-type",
 		"-Werror=non-virtual-dtor",

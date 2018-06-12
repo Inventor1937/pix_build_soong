@@ -28,12 +28,10 @@ var (
 		"-fno-strict-aliasing",
 		"-fstack-protector-strong",
 		"-ffunction-sections",
-		"-fdata-sections",
 		"-funwind-tables",
 		"-Wa,--noexecstack",
 		"-Werror=format-security",
 		"-D_FORTIFY_SOURCE=2",
-		"-fno-short-enums",
 		"-no-canonical-prefixes",
 		"-fno-canonical-system-headers",
 
@@ -42,15 +40,10 @@ var (
 		"-Werror=int-to-pointer-cast",
 		"-Werror=implicit-function-declaration",
 
-		"-fno-strict-volatile-bitfields",
-
 		// TARGET_RELEASE_CFLAGS
 		"-DNDEBUG",
-		"-O2 -g",
+		"-O2 -g0",
 		"-Wstrict-aliasing=2",
-		"-fgcse-after-reload",
-		"-frerun-cse-after-loop",
-		"-frename-registers",
 	}
 
 	arm64Ldflags = []string{
